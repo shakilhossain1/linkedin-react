@@ -1,0 +1,32 @@
+import React from 'react';
+import tw from 'twin.macro';
+import HeaderOption from './HeaderOption';
+import { SearchIcon } from '@heroicons/react/outline';
+import { HomeIcon, UserGroupIcon } from '@heroicons/react/solid';
+
+const MainHeader = tw.header`bg-white sticky top-0 py-2 flex`;
+const HeaderLeft = tw.div`flex`;
+const LogoImage = tw.img`object-contain h-[40px] mr-3`;
+const Search = tw.div`p-3 flex items-center h-9 rounded-md text-gray-500 bg-gray-200`;
+const SearchInput = tw.input`focus:outline-none bg-transparent`;
+
+export default function Header() {
+  return (
+    <MainHeader>
+      <HeaderLeft>
+        <LogoImage
+          src="https://image.flaticon.com/icons/png/512/174/174857.png"
+          alt="in"
+        />
+        <Search>
+          <SearchIcon className="w-6" />
+          <SearchInput type="text" />
+        </Search>
+      </HeaderLeft>
+      <div className="flex items-center bg-red-500 justify-evenly">
+        <HeaderOption Icon={<HomeIcon />} title="Home" />
+        <HeaderOption Icon={<UserGroupIcon />} title="My Network" />
+      </div>
+    </MainHeader>
+  );
+}
