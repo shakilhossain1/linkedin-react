@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
 import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import tw from 'twin.macro';
 
-function App() {
+const AppBody = tw.main`flex`;
+
+export default function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
+      <AppBody>
+        <Sidebar />
+      </AppBody>
     </div>
   );
 }
-
-export default App;
