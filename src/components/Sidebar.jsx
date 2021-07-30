@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 
 const Wrapper = tw.div`lg:sticky top-20 flex-grow-[0.2] rounded-lg text-center`;
 const SidebarTop = tw.div`flex flex-col items-center border border-gray-300 border-b-0 rounded-tl-lg rounded-tr-lg bg-white pb-3 overflow-hidden`;
-const SidebartopBackground = tw.img`-mb-4 w-full h-20 object-cover`;
+const SidebartopBackground = tw.LogoImg`-mb-4 w-full h-20 object-cover`;
 const StatParagraph = tw.p`text-gray-500 text-sm font-semibold`;
 const StatNumber = tw(StatParagraph)`font-bold text-blue-500`;
 const Stat = tw.div`mt-3 flex justify-between`;
