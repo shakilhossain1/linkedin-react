@@ -3,6 +3,7 @@ import { PencilIcon, PhotographIcon } from '@heroicons/react/solid';
 import InputOption from './InputOption';
 import { MdSubscriptions, MdEventNote } from 'react-icons/md';
 import { HiViewGridAdd } from 'react-icons/hi';
+import Post from './Post';
 
 const FeedContainer = tw.div`flex-grow-[0.6] mx-5`;
 const InputContainer = tw.div`bg-white p-3 pb-5 rounded-xl mb-5 w-full`;
@@ -34,6 +35,12 @@ export default function Feed() {
           />
         </InputOptions>
       </InputContainer>
+      {/* Posts */}
+      <Post
+        description="this is test description"
+        name="Example name"
+        message="this is message"
+      />
     </FeedContainer>
   );
 }

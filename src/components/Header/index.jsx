@@ -7,7 +7,7 @@ const MainHeader = tw.header`sticky top-0 py-2 flex justify-evenly w-full`;
 const HeaderLeft = tw.div`flex items-center`;
 const LogoImage = tw.img`object-contain h-[40px] mr-3`;
 const Search = tw.div`p-3 flex items-center h-9 rounded-md text-gray-500 bg-gray-200`;
-const SearchInput = tw.ActualInput`focus:outline-none bg-transparent pl-2`;
+const SearchInput = tw.input`focus:outline-none bg-transparent pl-2`;
 
 export default function Header() {
   return (
