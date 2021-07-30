@@ -22,7 +22,7 @@ export default function Post({ name, description, message, photoUrl }) {
       </div>
       {/* post Body */}
       <div>
-        <p className="text-sm text-gray-500">{message}</p>
+        <p className="text-sm text-gray-600">{message}</p>
       </div>
       {/* post buttons */}
       <div className="flex space-x-4 items-center">
